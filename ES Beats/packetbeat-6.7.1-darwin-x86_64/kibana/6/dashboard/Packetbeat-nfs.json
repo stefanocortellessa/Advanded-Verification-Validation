@@ -1,0 +1,208 @@
+{
+    "objects": [
+        {
+            "attributes": {
+                "description": "", 
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"filter\": []}"
+                }, 
+                "savedSearchId": "nfs", 
+                "title": "NFS clients pie chart", 
+                "uiStateJSON": "{}", 
+                "version": 1, 
+                "visState": "{\"type\": \"pie\", \"listeners\": {}, \"params\": {\"isDonut\": true, \"addTooltip\": true, \"shareYAxis\": true, \"addLegend\": true}, \"aggs\": [{\"type\": \"count\", \"params\": {}, \"id\": \"1\", \"schema\": \"metric\"}, {\"type\": \"terms\", \"params\": {\"orderBy\": \"1\", \"field\": \"rpc.cred.machinename\", \"order\": \"desc\", \"size\": 16}, \"id\": \"2\", \"schema\": \"segment\"}], \"title\": \"NFS clients pie chart\"}"
+            }, 
+            "id": "NFS-clients-pie-chart", 
+            "type": "visualization", 
+            "version": 1
+        }, 
+        {
+            "attributes": {
+                "description": "", 
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"filter\": []}"
+                }, 
+                "savedSearchId": "nfs", 
+                "title": "NFS operations area chart", 
+                "uiStateJSON": "{}", 
+                "version": 1, 
+                "visState": "{\"type\": \"area\", \"listeners\": {}, \"params\": {\"scale\": \"linear\", \"yAxis\": {}, \"smoothLines\": true, \"addTimeMarker\": false, \"interpolate\": \"linear\", \"addLegend\": true, \"shareYAxis\": true, \"mode\": \"stacked\", \"defaultYExtents\": false, \"setYExtents\": false, \"addTooltip\": true, \"times\": []}, \"aggs\": [{\"type\": \"count\", \"params\": {}, \"id\": \"1\", \"schema\": \"metric\"}, {\"type\": \"terms\", \"params\": {\"orderBy\": \"1\", \"field\": \"nfs.opcode\", \"order\": \"desc\", \"size\": 16}, \"id\": \"2\", \"schema\": \"group\"}, {\"type\": \"date_histogram\", \"params\": {\"customInterval\": \"2h\", \"field\": \"@timestamp\", \"interval\": \"auto\", \"min_doc_count\": 1, \"extended_bounds\": {}}, \"id\": \"3\", \"schema\": \"segment\"}], \"title\": \"NFS operations area chart\"}"
+            }, 
+            "id": "NFS-operations-area-chart", 
+            "type": "visualization", 
+            "version": 1
+        }, 
+        {
+            "attributes": {
+                "description": "", 
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"filter\": []}"
+                }, 
+                "savedSearchId": "nfs", 
+                "title": "NFS top group pie chart", 
+                "uiStateJSON": "{}", 
+                "version": 1, 
+                "visState": "{\"type\": \"pie\", \"listeners\": {}, \"params\": {\"isDonut\": false, \"addTooltip\": true, \"shareYAxis\": true, \"addLegend\": true}, \"aggs\": [{\"type\": \"count\", \"params\": {}, \"id\": \"1\", \"schema\": \"metric\"}, {\"type\": \"terms\", \"params\": {\"orderBy\": \"1\", \"field\": \"rpc.cred.gid\", \"order\": \"desc\", \"size\": 16}, \"id\": \"2\", \"schema\": \"segment\"}], \"title\": \"New Visualization\"}"
+            }, 
+            "id": "NFS-top-group-pie-chart", 
+            "type": "visualization", 
+            "version": 1
+        }, 
+        {
+            "attributes": {
+                "description": "", 
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"filter\": []}"
+                }, 
+                "savedSearchId": "nfs", 
+                "title": "NFS top users pie chart", 
+                "uiStateJSON": "{}", 
+                "version": 1, 
+                "visState": "{\"type\": \"pie\", \"listeners\": {}, \"params\": {\"isDonut\": false, \"addTooltip\": true, \"shareYAxis\": true, \"addLegend\": true}, \"aggs\": [{\"type\": \"count\", \"params\": {}, \"id\": \"1\", \"schema\": \"metric\"}, {\"type\": \"terms\", \"params\": {\"orderBy\": \"1\", \"field\": \"rpc.cred.uid\", \"order\": \"desc\", \"size\": 16}, \"id\": \"2\", \"schema\": \"segment\"}], \"title\": \"New Visualization\"}"
+            }, 
+            "id": "NFS-top-users-pie-chart", 
+            "type": "visualization", 
+            "version": 1
+        }, 
+        {
+            "attributes": {
+                "description": "", 
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"filter\": []}"
+                }, 
+                "savedSearchId": "nfs", 
+                "title": "NFS response times", 
+                "uiStateJSON": "{}", 
+                "version": 1, 
+                "visState": "{\"type\": \"line\", \"listeners\": {}, \"params\": {\"scale\": \"linear\", \"showCircles\": true, \"yAxis\": {}, \"smoothLines\": true, \"addTimeMarker\": false, \"interpolate\": \"linear\", \"addLegend\": true, \"shareYAxis\": true, \"radiusRatio\": \"9\", \"drawLinesBetweenPoints\": true, \"defaultYExtents\": true, \"setYExtents\": false, \"addTooltip\": true, \"times\": []}, \"aggs\": [{\"type\": \"median\", \"params\": {\"field\": \"rpc.time\", \"percents\": [50]}, \"id\": \"1\", \"schema\": \"metric\"}, {\"type\": \"date_histogram\", \"params\": {\"customInterval\": \"2h\", \"field\": \"@timestamp\", \"interval\": \"auto\", \"min_doc_count\": 1, \"extended_bounds\": {}}, \"id\": \"2\", \"schema\": \"segment\"}], \"title\": \"NFS response times\"}"
+            }, 
+            "id": "NFS-response-times", 
+            "type": "visualization", 
+            "version": 1
+        }, 
+        {
+            "attributes": {
+                "description": "", 
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"filter\": []}"
+                }, 
+                "savedSearchId": "NFS-errors-search", 
+                "title": "NFS errors", 
+                "uiStateJSON": "{}", 
+                "version": 1, 
+                "visState": "{\"type\": \"area\", \"listeners\": {}, \"params\": {\"scale\": \"linear\", \"yAxis\": {}, \"smoothLines\": false, \"legendPosition\": \"right\", \"addTimeMarker\": false, \"interpolate\": \"linear\", \"addLegend\": true, \"shareYAxis\": true, \"mode\": \"stacked\", \"defaultYExtents\": false, \"setYExtents\": false, \"addTooltip\": true, \"times\": []}, \"aggs\": [{\"params\": {}, \"type\": \"count\", \"enabled\": true, \"id\": \"1\", \"schema\": \"metric\"}, {\"params\": {\"customInterval\": \"2h\", \"field\": \"@timestamp\", \"interval\": \"auto\", \"min_doc_count\": 1, \"extended_bounds\": {}}, \"type\": \"date_histogram\", \"enabled\": true, \"id\": \"2\", \"schema\": \"segment\"}, {\"params\": {\"orderBy\": \"1\", \"field\": \"nfs.status\", \"order\": \"desc\", \"size\": 12}, \"type\": \"terms\", \"enabled\": true, \"id\": \"3\", \"schema\": \"group\"}], \"title\": \"NFS errors\"}"
+            }, 
+            "id": "NFS-errors", 
+            "type": "visualization", 
+            "version": 1
+        }, 
+        {
+            "attributes": {
+                "description": "", 
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"filter\": []}"
+                }, 
+                "savedSearchId": "nfs", 
+                "title": "NFS operation table", 
+                "uiStateJSON": "{}", 
+                "version": 1, 
+                "visState": "{\"type\": \"table\", \"listeners\": {}, \"params\": {\"perPage\": 10, \"showPartialRows\": false, \"showMeticsAtAllLevels\": false}, \"aggs\": [{\"type\": \"avg\", \"params\": {\"field\": \"rpc.time\"}, \"id\": \"1\", \"schema\": \"metric\"}, {\"type\": \"terms\", \"params\": {\"orderBy\": \"1\", \"field\": \"nfs.opcode\", \"order\": \"desc\", \"size\": 16}, \"id\": \"2\", \"schema\": \"bucket\"}, {\"type\": \"count\", \"params\": {}, \"id\": \"3\", \"schema\": \"metric\"}], \"title\": \"NFS operation table\"}"
+            }, 
+            "id": "NFS-operation-table", 
+            "type": "visualization", 
+            "version": 1
+        }, 
+        {
+            "attributes": {
+                "description": "", 
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"filter\": []}"
+                }, 
+                "savedSearchId": "nfs", 
+                "title": "NFS bytes in / out", 
+                "uiStateJSON": "{\"vis\": {\"colors\": {\"Sum of rpc.reply_size\": \"#7EB26D\"}}}", 
+                "version": 1, 
+                "visState": "{\"type\": \"line\", \"listeners\": {}, \"params\": {\"scale\": \"linear\", \"showCircles\": true, \"yAxis\": {}, \"smoothLines\": false, \"addTimeMarker\": false, \"interpolate\": \"linear\", \"addLegend\": true, \"shareYAxis\": true, \"radiusRatio\": 9, \"drawLinesBetweenPoints\": true, \"defaultYExtents\": false, \"setYExtents\": false, \"addTooltip\": true, \"times\": []}, \"aggs\": [{\"type\": \"sum\", \"params\": {\"field\": \"rpc.call_size\"}, \"id\": \"1\", \"schema\": \"metric\"}, {\"type\": \"sum\", \"params\": {\"field\": \"rpc.reply_size\"}, \"id\": \"2\", \"schema\": \"metric\"}, {\"type\": \"date_histogram\", \"params\": {\"customInterval\": \"2h\", \"field\": \"@timestamp\", \"interval\": \"auto\", \"min_doc_count\": 1, \"extended_bounds\": {}}, \"id\": \"3\", \"schema\": \"segment\"}], \"title\": \"NFS bytes in / out\"}"
+            }, 
+            "id": "NFS-bytes-in-slash-out", 
+            "type": "visualization", 
+            "version": 1
+        }, 
+        {
+            "attributes": {
+                "description": "", 
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"filter\": [], \"query\": {\"query\": {\"query_string\": {\"analyze_wildcard\": true, \"query\": \"*\"}}, \"language\": \"lucene\"}}"
+                }, 
+                "title": "Navigation", 
+                "uiStateJSON": "{}", 
+                "version": 1, 
+                "visState": "{\"type\": \"markdown\", \"params\": {\"markdown\": \"### Packetbeat:\\n\\n[Overview](#/dashboard/Packetbeat-Dashboard)\\n\\n[Flows](#/dashboard/Packetbeat-Flows)\\n\\n[Web transactions](#/dashboard/Packetbeat-HTTP)\\n\\n[MySQL performance](#/dashboard/Packetbeat-MySQL-performance)\\n\\n[PostgreSQL performance](#/dashboard/Packetbeat-PgSQL-performance)\\n\\n[MongoDB performance](#/dashboard/Packetbeat-MongoDB-performance)\\n\\n[Thrift-RPC performance](#/dashboard/Packetbeat-Thrift-performance)\\n\\n[NFS transactions](#/dashboard/Packetbeat-NFS)\\n\\n[Cassandra performance](#/dashboard/Packetbeat-Cassandra)\", \"fontSize\": \"10\"}, \"aggs\": [], \"title\": \"Navigation\"}"
+            }, 
+            "id": "Navigation", 
+            "type": "visualization", 
+            "version": 10
+        }, 
+        {
+            "attributes": {
+                "columns": [
+                    "_source"
+                ], 
+                "description": "", 
+                "hits": 0, 
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"filter\": [{\"query\": {\"match\": {\"type\": {\"query\": \"nfs\", \"type\": \"phrase\"}}}, \"meta\": {\"index\": \"packetbeat-*\", \"value\": \"nfs\", \"disabled\": false, \"alias\": null, \"key\": \"type\", \"negate\": false}, \"$state\": {\"store\": \"appState\"}}], \"highlight\": {\"fields\": {\"*\": {}}, \"post_tags\": [\"@/kibana-highlighted-field@\"], \"pre_tags\": [\"@kibana-highlighted-field@\"], \"require_field_match\": false, \"fragment_size\": 2147483647}, \"query\": {\"query_string\": {\"analyze_wildcard\": true, \"query\": \"*\"}}, \"index\": \"packetbeat-*\"}"
+                }, 
+                "sort": [
+                    "@timestamp", 
+                    "desc"
+                ], 
+                "title": "nfs", 
+                "version": 1
+            }, 
+            "id": "nfs", 
+            "type": "search", 
+            "version": 1
+        }, 
+        {
+            "attributes": {
+                "columns": [
+                    "_source"
+                ], 
+                "description": "", 
+                "hits": 0, 
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"filter\": [{\"query\": {\"match\": {\"type\": {\"query\": \"nfs\", \"type\": \"phrase\"}}}, \"meta\": {\"index\": \"packetbeat-*\", \"value\": \"nfs\", \"disabled\": false, \"alias\": null, \"key\": \"type\", \"negate\": false}, \"$state\": {\"store\": \"appState\"}}, {\"query\": {\"match\": {\"nfs.status\": {\"query\": \"NFSERR_NOENT\", \"type\": \"phrase\"}}}, \"meta\": {\"index\": \"packetbeat-*\", \"value\": \"NFSERR_NOENT\", \"disabled\": false, \"alias\": null, \"key\": \"nfs.status\", \"negate\": true}, \"$state\": {\"store\": \"appState\"}}, {\"query\": {\"match\": {\"nfs.status\": {\"query\": \"NFS_OK\", \"type\": \"phrase\"}}}, \"meta\": {\"index\": \"packetbeat-*\", \"value\": \"NFS_OK\", \"disabled\": false, \"alias\": null, \"key\": \"nfs.status\", \"negate\": true}, \"$state\": {\"store\": \"appState\"}}], \"highlight\": {\"fields\": {\"*\": {}}, \"post_tags\": [\"@/kibana-highlighted-field@\"], \"pre_tags\": [\"@kibana-highlighted-field@\"], \"require_field_match\": false, \"fragment_size\": 2147483647}, \"query\": {\"query_string\": {\"analyze_wildcard\": true, \"query\": \"*\"}}, \"index\": \"packetbeat-*\"}"
+                }, 
+                "sort": [
+                    "@timestamp", 
+                    "desc"
+                ], 
+                "title": "NFS errors search", 
+                "version": 1
+            }, 
+            "id": "NFS-errors-search", 
+            "type": "search", 
+            "version": 1
+        }, 
+        {
+            "attributes": {
+                "description": "", 
+                "hits": 0, 
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"filter\": [], \"query\": {\"query\": {\"query_string\": {\"analyze_wildcard\": true, \"query\": \"*\"}}, \"language\": \"lucene\"}, \"version\": true, \"highlightAll\": true}"
+                }, 
+                "optionsJSON": "{\"darkTheme\": false}", 
+                "panelsJSON": "[{\"type\": \"visualization\", \"id\": \"NFS-clients-pie-chart\", \"size_x\": 4, \"size_y\": 5, \"panelIndex\": 1, \"col\": 5, \"row\": 1}, {\"type\": \"visualization\", \"id\": \"NFS-operations-area-chart\", \"size_x\": 6, \"size_y\": 4, \"panelIndex\": 3, \"col\": 1, \"row\": 12}, {\"type\": \"visualization\", \"id\": \"NFS-top-group-pie-chart\", \"size_x\": 4, \"size_y\": 2, \"panelIndex\": 4, \"col\": 9, \"row\": 1}, {\"type\": \"visualization\", \"id\": \"NFS-top-users-pie-chart\", \"size_x\": 4, \"size_y\": 3, \"panelIndex\": 5, \"col\": 9, \"row\": 3}, {\"type\": \"visualization\", \"id\": \"NFS-response-times\", \"size_x\": 6, \"size_y\": 3, \"panelIndex\": 6, \"col\": 7, \"row\": 6}, {\"type\": \"visualization\", \"id\": \"NFS-errors\", \"size_x\": 6, \"size_y\": 3, \"panelIndex\": 7, \"col\": 7, \"row\": 9}, {\"type\": \"visualization\", \"id\": \"NFS-operation-table\", \"size_x\": 6, \"size_y\": 4, \"panelIndex\": 8, \"col\": 7, \"row\": 12}, {\"type\": \"visualization\", \"id\": \"NFS-bytes-in-slash-out\", \"size_x\": 6, \"size_y\": 6, \"panelIndex\": 9, \"col\": 1, \"row\": 6}, {\"type\": \"visualization\", \"id\": \"Navigation\", \"size_x\": 4, \"size_y\": 5, \"panelIndex\": 10, \"col\": 1, \"row\": 1}]", 
+                "timeRestore": false, 
+                "title": "[Packetbeat] NFS", 
+                "uiStateJSON": "{\"P-4\": {\"spy\": {\"mode\": {\"name\": null, \"fill\": false}}, \"vis\": {\"legendOpen\": true}}, \"P-5\": {\"vis\": {\"legendOpen\": true}}, \"P-6\": {\"vis\": {\"legendOpen\": false}}, \"P-1\": {\"vis\": {\"legendOpen\": true}}, \"P-8\": {\"vis\": {\"params\": {\"sort\": {\"columnIndex\": null, \"direction\": null}}}}, \"P-9\": {\"vis\": {\"legendOpen\": true}}}", 
+                "version": 1
+            }, 
+            "id": "Packetbeat-NFS", 
+            "type": "dashboard", 
+            "version": 2
+        }
+    ], 
+    "version": "6.0.0-beta1-SNAPSHOT"
+}

@@ -1,0 +1,107 @@
+{
+    "objects": [
+        {
+            "attributes": {
+                "description": "", 
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"filter\": []}"
+                }, 
+                "savedSearchId": "DNS", 
+                "title": "Unique FQDNs per eTLD+1", 
+                "uiStateJSON": "{\"vis\": {\"colors\": {\"Count\": \"#1F78C1\", \"Unique count of dns.question.name\": \"#E0752D\"}}}", 
+                "version": 1, 
+                "visState": "{\"type\": \"histogram\", \"listeners\": {}, \"params\": {\"scale\": \"linear\", \"yAxis\": {}, \"legendPosition\": \"right\", \"addTimeMarker\": false, \"addLegend\": true, \"shareYAxis\": true, \"mode\": \"grouped\", \"defaultYExtents\": true, \"setYExtents\": false, \"addTooltip\": true, \"times\": []}, \"aggs\": [{\"params\": {\"field\": \"dns.question.name\", \"customLabel\": \"Unique Subdomain Count\"}, \"type\": \"cardinality\", \"enabled\": true, \"id\": \"1\", \"schema\": \"metric\"}, {\"params\": {\"orderBy\": \"1\", \"field\": \"dns.question.etld_plus_one\", \"customLabel\": \"Domains\", \"order\": \"desc\", \"size\": 20}, \"type\": \"terms\", \"enabled\": true, \"id\": \"2\", \"schema\": \"segment\"}], \"title\": \"Unique FQDNs per eTLD+1\"}"
+            }, 
+            "id": "Unique-FQDNs-per-eTLD 1", 
+            "type": "visualization", 
+            "version": 1
+        }, 
+        {
+            "attributes": {
+                "description": "", 
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"filter\": []}"
+                }, 
+                "savedSearchId": "DNS", 
+                "title": "Unique FQDNs per eTLD+1 Table", 
+                "uiStateJSON": "{\"vis\": {\"params\": {\"sort\": {\"columnIndex\": null, \"direction\": null}}}}", 
+                "version": 1, 
+                "visState": "{\"type\": \"table\", \"listeners\": {}, \"params\": {\"sort\": {\"columnIndex\": null, \"direction\": null}, \"perPage\": 10, \"showPartialRows\": false, \"totalFunc\": \"sum\", \"showTotal\": false, \"showMeticsAtAllLevels\": false}, \"aggs\": [{\"params\": {\"customLabel\": \"\"}, \"type\": \"count\", \"enabled\": true, \"id\": \"1\", \"schema\": \"metric\"}, {\"params\": {\"orderBy\": \"1\", \"field\": \"dns.question.etld_plus_one\", \"customLabel\": \"ETLD+1\", \"order\": \"desc\", \"size\": 20}, \"type\": \"terms\", \"enabled\": true, \"id\": \"2\", \"schema\": \"bucket\"}, {\"params\": {\"field\": \"dns.question.name\", \"customLabel\": \"Unique Domains\"}, \"type\": \"cardinality\", \"enabled\": true, \"id\": \"3\", \"schema\": \"metric\"}], \"title\": \"Unique FQDNs per eTLD+1 Table\"}"
+            }, 
+            "id": "Unique-FQDNs-per-eTLD 1-Table", 
+            "type": "visualization", 
+            "version": 1
+        }, 
+        {
+            "attributes": {
+                "description": "", 
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"filter\": []}"
+                }, 
+                "savedSearchId": "DNS", 
+                "title": "Bytes Transferred per Domain", 
+                "uiStateJSON": "{\"vis\": {\"colors\": {\"Bytes Out\": \"#629E51\", \"Count\": \"#1F78C1\", \"Unique count of dns.question.name\": \"#E0752D\", \"Bytes In\": \"#F2C96D\"}}}", 
+                "version": 1, 
+                "visState": "{\"type\": \"histogram\", \"listeners\": {}, \"params\": {\"scale\": \"linear\", \"yAxis\": {}, \"legendPosition\": \"right\", \"addTimeMarker\": false, \"addLegend\": true, \"shareYAxis\": true, \"mode\": \"grouped\", \"defaultYExtents\": true, \"setYExtents\": false, \"addTooltip\": true, \"times\": []}, \"aggs\": [{\"params\": {\"field\": \"bytes_out\", \"customLabel\": \"Bytes Out\"}, \"type\": \"sum\", \"enabled\": true, \"id\": \"1\", \"schema\": \"metric\"}, {\"params\": {\"orderBy\": \"1\", \"field\": \"dns.question.etld_plus_one\", \"customLabel\": \"Domains\", \"order\": \"desc\", \"size\": 20}, \"type\": \"terms\", \"enabled\": true, \"id\": \"2\", \"schema\": \"segment\"}, {\"params\": {\"field\": \"bytes_in\", \"customLabel\": \"Bytes In\"}, \"type\": \"sum\", \"enabled\": true, \"id\": \"3\", \"schema\": \"metric\"}], \"title\": \"Bytes Transferred per Domain\"}"
+            }, 
+            "id": "Bytes-Transferred-per-Domain", 
+            "type": "visualization", 
+            "version": 1
+        }, 
+        {
+            "attributes": {
+                "description": "", 
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"filter\": [], \"index\": \"packetbeat-*\", \"query\": {\"query_string\": {\"analyze_wildcard\": true, \"query\": \"type:dns\"}}}"
+                }, 
+                "title": "Top Domains by Data Volume", 
+                "uiStateJSON": "{\"vis\": {\"params\": {\"sort\": {\"columnIndex\": null, \"direction\": null}}}}", 
+                "version": 1, 
+                "visState": "{\"type\": \"table\", \"listeners\": {}, \"params\": {\"sort\": {\"columnIndex\": null, \"direction\": null}, \"perPage\": 10, \"showPartialRows\": false, \"totalFunc\": \"sum\", \"showTotal\": false, \"showMeticsAtAllLevels\": false}, \"aggs\": [{\"params\": {\"field\": \"bytes_in\", \"customLabel\": \"Bytes In\"}, \"type\": \"sum\", \"enabled\": true, \"id\": \"1\", \"schema\": \"metric\"}, {\"params\": {\"orderBy\": \"3\", \"field\": \"dns.question.etld_plus_one\", \"customLabel\": \"ETLD+1\", \"order\": \"desc\", \"size\": 20}, \"type\": \"terms\", \"enabled\": true, \"id\": \"2\", \"schema\": \"bucket\"}, {\"params\": {\"field\": \"bytes_out\", \"customLabel\": \"Bytes Out\"}, \"type\": \"sum\", \"enabled\": true, \"id\": \"3\", \"schema\": \"metric\"}], \"title\": \"Top Domains by Data Volume\"}"
+            }, 
+            "id": "dc743240-1665-11e7-a6de-cbac1a3d0a7d", 
+            "type": "visualization", 
+            "version": 1
+        }, 
+        {
+            "attributes": {
+                "columns": [
+                    "_source"
+                ], 
+                "description": "", 
+                "hits": 0, 
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"filter\": [], \"highlight\": {\"fields\": {\"*\": {}}, \"post_tags\": [\"@/kibana-highlighted-field@\"], \"pre_tags\": [\"@kibana-highlighted-field@\"], \"require_field_match\": false, \"fragment_size\": 2147483647}, \"query\": {\"query_string\": {\"analyze_wildcard\": true, \"query\": \"type: dns\"}}, \"index\": \"packetbeat-*\"}"
+                }, 
+                "sort": [
+                    "@timestamp", 
+                    "desc"
+                ], 
+                "title": "DNS", 
+                "version": 1
+            }, 
+            "id": "DNS", 
+            "type": "search", 
+            "version": 2
+        }, 
+        {
+            "attributes": {
+                "description": "", 
+                "hits": 0, 
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"filter\": [], \"query\": {\"query\": {\"query_string\": {\"analyze_wildcard\": true, \"query\": \"NOT dns.question.type:PTR\"}}, \"language\": \"lucene\"}, \"version\": true, \"highlightAll\": true}"
+                }, 
+                "optionsJSON": "{\"darkTheme\": false}", 
+                "panelsJSON": "[{\"type\": \"visualization\", \"id\": \"Unique-FQDNs-per-eTLD 1\", \"size_x\": 12, \"size_y\": 4, \"panelIndex\": 1, \"col\": 1, \"row\": 1}, {\"type\": \"visualization\", \"id\": \"Unique-FQDNs-per-eTLD 1-Table\", \"size_x\": 6, \"size_y\": 4, \"panelIndex\": 2, \"col\": 1, \"row\": 8}, {\"type\": \"visualization\", \"id\": \"Bytes-Transferred-per-Domain\", \"size_x\": 12, \"size_y\": 3, \"panelIndex\": 4, \"col\": 1, \"row\": 5}, {\"type\": \"visualization\", \"id\": \"dc743240-1665-11e7-a6de-cbac1a3d0a7d\", \"size_x\": 6, \"size_y\": 4, \"panelIndex\": 5, \"col\": 7, \"row\": 8}]", 
+                "timeRestore": false, 
+                "title": "[Packetbeat] DNS Tunneling", 
+                "uiStateJSON": "{\"P-4\": {\"vis\": {\"legendOpen\": false}}, \"P-5\": {\"vis\": {\"params\": {\"sort\": {\"columnIndex\": null, \"direction\": null}}}}, \"P-1\": {\"spy\": {\"mode\": {\"name\": null, \"fill\": false}}, \"vis\": {\"colors\": {\"Count\": \"#1F78C1\", \"Unique Subdomain Count\": \"#EF843C\", \"Unique count of dns.question.name\": \"#E0752D\"}, \"legendOpen\": false}}, \"P-2\": {\"vis\": {\"params\": {\"sort\": {\"columnIndex\": null, \"direction\": null}}}}}", 
+                "version": 1
+            }, 
+            "id": "DNS-Unique-Domains", 
+            "type": "dashboard", 
+            "version": 2
+        }
+    ], 
+    "version": "6.0.0-beta1-SNAPSHOT"
+}

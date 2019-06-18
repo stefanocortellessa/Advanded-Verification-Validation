@@ -1,0 +1,152 @@
+{
+    "objects": [
+        {
+            "attributes": {
+                "description": "", 
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"filter\": []}"
+                }, 
+                "savedSearchId": "71908f00-88ca-11e7-ad9c-db80de0bf8d3", 
+                "title": "Web transactions", 
+                "uiStateJSON": "{}", 
+                "version": 1, 
+                "visState": "{\"type\": \"histogram\", \"listeners\": {}, \"params\": {\"scale\": \"linear\", \"yAxis\": {}, \"addTimeMarker\": false, \"addLegend\": false, \"shareYAxis\": true, \"mode\": \"stacked\", \"defaultYExtents\": false, \"setYExtents\": false, \"addTooltip\": true, \"times\": []}, \"aggs\": [{\"type\": \"count\", \"params\": {}, \"id\": \"1\", \"schema\": \"metric\"}, {\"type\": \"date_histogram\", \"params\": {\"customInterval\": \"2h\", \"field\": \"@timestamp\", \"interval\": \"auto\", \"min_doc_count\": 1, \"extended_bounds\": {}}, \"id\": \"2\", \"schema\": \"segment\"}], \"title\": \"Web transactions\"}"
+            }, 
+            "id": "Web-transactions", 
+            "type": "visualization", 
+            "version": 3
+        }, 
+        {
+            "attributes": {
+                "description": "", 
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"filter\": [{\"query\": {\"match\": {\"type\": {\"query\": \"http\", \"type\": \"phrase\"}}}, \"meta\": {\"index\": \"packetbeat-*\", \"value\": \"http\", \"disabled\": false, \"alias\": null, \"key\": \"type\", \"negate\": false}, \"$state\": {\"store\": \"appState\"}}], \"highlight\": {\"fields\": {\"*\": {}}, \"pre_tags\": [\"@kibana-highlighted-field@\"], \"post_tags\": [\"@/kibana-highlighted-field@\"]}, \"query\": {\"query_string\": {\"analyze_wildcard\": true, \"query\": \"http.response.code: [300 TO *]\"}}, \"index\": \"packetbeat-*\"}"
+                }, 
+                "title": "HTTP error codes", 
+                "uiStateJSON": "{}", 
+                "version": 1, 
+                "visState": "{\"type\": \"histogram\", \"listeners\": {}, \"params\": {\"scale\": \"linear\", \"yAxis\": {}, \"addTimeMarker\": false, \"addLegend\": false, \"shareYAxis\": true, \"mode\": \"stacked\", \"defaultYExtents\": false, \"setYExtents\": false, \"addTooltip\": true, \"times\": []}, \"aggs\": [{\"type\": \"cardinality\", \"params\": {\"field\": \"type\"}, \"id\": \"1\", \"schema\": \"metric\"}, {\"type\": \"terms\", \"params\": {\"orderBy\": \"1\", \"field\": \"http.response.code\", \"order\": \"desc\", \"size\": 5}, \"id\": \"2\", \"schema\": \"segment\"}], \"title\": \"HTTP error codes\"}"
+            }, 
+            "id": "HTTP-error-codes", 
+            "type": "visualization", 
+            "version": 1
+        }, 
+        {
+            "attributes": {
+                "description": "", 
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"filter\": [{\"query\": {\"match\": {\"type\": {\"query\": \"http\", \"type\": \"phrase\"}}}, \"meta\": {\"index\": \"packetbeat-*\", \"value\": \"http\", \"disabled\": false, \"alias\": null, \"key\": \"type\", \"negate\": false}, \"$state\": {\"store\": \"appState\"}}], \"highlight\": {\"fields\": {\"*\": {}}, \"pre_tags\": [\"@kibana-highlighted-field@\"], \"post_tags\": [\"@/kibana-highlighted-field@\"]}, \"query\": {\"query_string\": {\"analyze_wildcard\": true, \"query\": \"!http.response.code: [200 TO 299]\"}}, \"index\": \"packetbeat-*\"}"
+                }, 
+                "title": "HTTP error codes evolution", 
+                "uiStateJSON": "{}", 
+                "version": 1, 
+                "visState": "{\"type\": \"line\", \"listeners\": {}, \"params\": {\"scale\": \"linear\", \"showCircles\": true, \"yAxis\": {}, \"smoothLines\": false, \"addTimeMarker\": false, \"interpolate\": \"linear\", \"addLegend\": true, \"shareYAxis\": true, \"radiusRatio\": 9, \"drawLinesBetweenPoints\": true, \"defaultYExtents\": false, \"setYExtents\": false, \"addTooltip\": true, \"times\": []}, \"aggs\": [{\"type\": \"cardinality\", \"params\": {\"field\": \"type\"}, \"id\": \"1\", \"schema\": \"metric\"}, {\"type\": \"date_histogram\", \"params\": {\"customInterval\": \"2h\", \"field\": \"@timestamp\", \"interval\": \"auto\", \"min_doc_count\": 1, \"extended_bounds\": {}}, \"id\": \"2\", \"schema\": \"segment\"}, {\"type\": \"terms\", \"params\": {\"orderBy\": \"1\", \"field\": \"http.response.code\", \"order\": \"desc\", \"size\": 5}, \"id\": \"3\", \"schema\": \"group\"}], \"title\": \"HTTP error codes evolution\"}"
+            }, 
+            "id": "HTTP-error-codes-evolution", 
+            "type": "visualization", 
+            "version": 1
+        }, 
+        {
+            "attributes": {
+                "description": "", 
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"filter\": [], \"query\": {\"query\": {\"query_string\": {\"analyze_wildcard\": true, \"query\": \"*\"}}, \"language\": \"lucene\"}}"
+                }, 
+                "title": "Navigation", 
+                "uiStateJSON": "{}", 
+                "version": 1, 
+                "visState": "{\"type\": \"markdown\", \"params\": {\"markdown\": \"### Packetbeat:\\n\\n[Overview](#/dashboard/Packetbeat-Dashboard)\\n\\n[Flows](#/dashboard/Packetbeat-Flows)\\n\\n[Web transactions](#/dashboard/Packetbeat-HTTP)\\n\\n[MySQL performance](#/dashboard/Packetbeat-MySQL-performance)\\n\\n[PostgreSQL performance](#/dashboard/Packetbeat-PgSQL-performance)\\n\\n[MongoDB performance](#/dashboard/Packetbeat-MongoDB-performance)\\n\\n[Thrift-RPC performance](#/dashboard/Packetbeat-Thrift-performance)\\n\\n[NFS transactions](#/dashboard/Packetbeat-NFS)\\n\\n[Cassandra performance](#/dashboard/Packetbeat-Cassandra)\", \"fontSize\": \"10\"}, \"aggs\": [], \"title\": \"Navigation\"}"
+            }, 
+            "id": "Navigation", 
+            "type": "visualization", 
+            "version": 10
+        }, 
+        {
+            "attributes": {
+                "description": "", 
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"filter\": []}"
+                }, 
+                "savedSearchId": "71908f00-88ca-11e7-ad9c-db80de0bf8d3", 
+                "title": "Total number of HTTP transactions", 
+                "uiStateJSON": "{}", 
+                "version": 1, 
+                "visState": "{\"type\": \"metric\", \"listeners\": {}, \"params\": {\"handleNoResults\": true, \"fontSize\": \"37\"}, \"aggs\": [{\"type\": \"count\", \"params\": {}, \"id\": \"1\", \"schema\": \"metric\"}], \"title\": \"Total number of HTTP transactions\"}"
+            }, 
+            "id": "Total-number-of-HTTP-transactions", 
+            "type": "visualization", 
+            "version": 2
+        }, 
+        {
+            "attributes": {
+                "description": "", 
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"filter\": []}"
+                }, 
+                "savedSearchId": "71908f00-88ca-11e7-ad9c-db80de0bf8d3", 
+                "title": "HTTP codes for the top queries", 
+                "version": 1, 
+                "visState": "{\"type\": \"pie\", \"listeners\": {}, \"params\": {\"isDonut\": false, \"addTooltip\": true, \"shareYAxis\": true, \"addLegend\": true}, \"aggs\": [{\"type\": \"count\", \"params\": {}, \"id\": \"1\", \"schema\": \"metric\"}, {\"type\": \"terms\", \"params\": {\"orderBy\": \"1\", \"field\": \"query\", \"size\": 5, \"order\": \"desc\", \"row\": false}, \"id\": \"2\", \"schema\": \"split\"}, {\"type\": \"terms\", \"params\": {\"orderBy\": \"1\", \"field\": \"http.response.code\", \"order\": \"desc\", \"size\": 10}, \"id\": \"3\", \"schema\": \"segment\"}]}"
+            }, 
+            "id": "HTTP-codes-for-the-top-queries", 
+            "type": "visualization", 
+            "version": 2
+        }, 
+        {
+            "attributes": {
+                "description": "", 
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"filter\": []}"
+                }, 
+                "savedSearchId": "71908f00-88ca-11e7-ad9c-db80de0bf8d3", 
+                "title": "Top 10 HTTP requests", 
+                "uiStateJSON": "{}", 
+                "version": 1, 
+                "visState": "{\"type\": \"table\", \"listeners\": {}, \"params\": {\"perPage\": 10, \"showPartialRows\": false, \"showMeticsAtAllLevels\": false}, \"aggs\": [{\"type\": \"count\", \"params\": {}, \"id\": \"1\", \"schema\": \"metric\"}, {\"type\": \"terms\", \"params\": {\"orderBy\": \"1\", \"field\": \"query\", \"order\": \"desc\", \"size\": 10}, \"id\": \"2\", \"schema\": \"bucket\"}], \"title\": \"Top 10 HTTP requests\"}"
+            }, 
+            "id": "Top-10-HTTP-requests", 
+            "type": "visualization", 
+            "version": 2
+        }, 
+        {
+            "attributes": {
+                "columns": [
+                    "_source"
+                ], 
+                "description": "", 
+                "hits": 0, 
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"filter\": [{\"query\": {\"match\": {\"type\": {\"query\": \"http\", \"type\": \"phrase\"}}}, \"meta\": {\"index\": \"packetbeat-*\", \"value\": \"http\", \"disabled\": false, \"alias\": null, \"params\": {\"query\": \"http\", \"type\": \"phrase\"}, \"key\": \"type\", \"negate\": false, \"type\": \"phrase\"}, \"$state\": {\"store\": \"appState\"}}], \"index\": \"packetbeat-*\", \"version\": true, \"highlightAll\": true, \"query\": {\"query\": \"*\", \"language\": \"lucene\"}}"
+                }, 
+                "sort": [
+                    "@timestamp", 
+                    "desc"
+                ], 
+                "title": "Web Transactions [Packetbeat]", 
+                "version": 1
+            }, 
+            "id": "71908f00-88ca-11e7-ad9c-db80de0bf8d3", 
+            "type": "search", 
+            "version": 2
+        }, 
+        {
+            "attributes": {
+                "description": "", 
+                "hits": 0, 
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"filter\": [], \"query\": {\"query\": {\"query_string\": {\"analyze_wildcard\": true, \"query\": \"*\"}}, \"language\": \"lucene\"}, \"version\": true, \"highlightAll\": true}"
+                }, 
+                "optionsJSON": "{\"darkTheme\": false}", 
+                "panelsJSON": "[{\"type\": \"visualization\", \"id\": \"Web-transactions\", \"size_x\": 9, \"size_y\": 4, \"panelIndex\": 1, \"col\": 4, \"row\": 1}, {\"type\": \"visualization\", \"id\": \"HTTP-error-codes\", \"size_x\": 6, \"size_y\": 3, \"panelIndex\": 2, \"col\": 1, \"row\": 8}, {\"type\": \"visualization\", \"id\": \"HTTP-error-codes-evolution\", \"size_x\": 6, \"size_y\": 3, \"panelIndex\": 3, \"col\": 7, \"row\": 8}, {\"type\": \"visualization\", \"id\": \"Navigation\", \"size_x\": 3, \"size_y\": 4, \"panelIndex\": 4, \"col\": 1, \"row\": 1}, {\"type\": \"visualization\", \"id\": \"Total-number-of-HTTP-transactions\", \"size_x\": 3, \"size_y\": 3, \"panelIndex\": 5, \"col\": 1, \"row\": 5}, {\"type\": \"visualization\", \"id\": \"HTTP-codes-for-the-top-queries\", \"size_x\": 9, \"size_y\": 3, \"panelIndex\": 6, \"col\": 4, \"row\": 5}, {\"type\": \"visualization\", \"id\": \"Top-10-HTTP-requests\", \"size_x\": 12, \"size_y\": 5, \"panelIndex\": 7, \"col\": 1, \"row\": 11}]", 
+                "timeRestore": false, 
+                "title": "[Packetbeat] HTTP", 
+                "uiStateJSON": "{\"P-5\": {\"vis\": {\"defaultColors\": {\"0 - 100\": \"rgb(0,104,55)\"}}}, \"P-7\": {\"vis\": {\"params\": {\"sort\": {\"columnIndex\": null, \"direction\": null}}}}}", 
+                "version": 1
+            }, 
+            "id": "Packetbeat-HTTP", 
+            "type": "dashboard", 
+            "version": 2
+        }
+    ], 
+    "version": "6.0.0-beta1-SNAPSHOT"
+}

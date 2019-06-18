@@ -1,0 +1,121 @@
+[2019-05-20T14:07:12,283][INFO ][o.e.e.NodeEnvironment    ] [8R1uB7o] using [1] data paths, mounts [[/ (/dev/disk1s1)]], net usable_space [40.7gb], net total_space [112.8gb], types [apfs]
+[2019-05-20T14:07:12,302][INFO ][o.e.e.NodeEnvironment    ] [8R1uB7o] heap size [990.7mb], compressed ordinary object pointers [true]
+[2019-05-20T14:07:12,416][INFO ][o.e.n.Node               ] [8R1uB7o] node name derived from node ID [8R1uB7oCSSeiMqatwfkumw]; set [node.name] to override
+[2019-05-20T14:07:12,417][INFO ][o.e.n.Node               ] [8R1uB7o] version[6.7.1], pid[15818], build[default/tar/2f32220/2019-04-02T15:59:27.961366Z], OS[Mac OS X/10.14.4/x86_64], JVM[Oracle Corporation/Java HotSpot(TM) 64-Bit Server VM/1.8.0_181/25.181-b13]
+[2019-05-20T14:07:12,417][INFO ][o.e.n.Node               ] [8R1uB7o] JVM arguments [-Xms1g, -Xmx1g, -XX:+UseConcMarkSweepGC, -XX:CMSInitiatingOccupancyFraction=75, -XX:+UseCMSInitiatingOccupancyOnly, -Des.networkaddress.cache.ttl=60, -Des.networkaddress.cache.negative.ttl=10, -XX:+AlwaysPreTouch, -Xss1m, -Djava.awt.headless=true, -Dfile.encoding=UTF-8, -Djna.nosys=true, -XX:-OmitStackTraceInFastThrow, -Dio.netty.noUnsafe=true, -Dio.netty.noKeySetOptimization=true, -Dio.netty.recycler.maxCapacityPerThread=0, -Dlog4j.shutdownHookEnabled=false, -Dlog4j2.disable.jmx=true, -Djava.io.tmpdir=/var/folders/lj/tdbh0bx928zgpljzkhm2360c0000gn/T/elasticsearch-5108377454982159373, -XX:+HeapDumpOnOutOfMemoryError, -XX:HeapDumpPath=data, -XX:ErrorFile=logs/hs_err_pid%p.log, -XX:+PrintGCDetails, -XX:+PrintGCDateStamps, -XX:+PrintTenuringDistribution, -XX:+PrintGCApplicationStoppedTime, -Xloggc:logs/gc.log, -XX:+UseGCLogFileRotation, -XX:NumberOfGCLogFiles=32, -XX:GCLogFileSize=64m, -Des.path.home=/Users/stecort/Desktop/consegna AVV/ES Beats/elasticsearch-6.7.1, -Des.path.conf=/Users/stecort/Desktop/consegna AVV/ES Beats/elasticsearch-6.7.1/config, -Des.distribution.flavor=default, -Des.distribution.type=tar]
+[2019-05-20T14:07:16,058][INFO ][o.e.p.PluginsService     ] [8R1uB7o] loaded module [aggs-matrix-stats]
+[2019-05-20T14:07:16,059][INFO ][o.e.p.PluginsService     ] [8R1uB7o] loaded module [analysis-common]
+[2019-05-20T14:07:16,059][INFO ][o.e.p.PluginsService     ] [8R1uB7o] loaded module [ingest-common]
+[2019-05-20T14:07:16,059][INFO ][o.e.p.PluginsService     ] [8R1uB7o] loaded module [ingest-geoip]
+[2019-05-20T14:07:16,060][INFO ][o.e.p.PluginsService     ] [8R1uB7o] loaded module [ingest-user-agent]
+[2019-05-20T14:07:16,060][INFO ][o.e.p.PluginsService     ] [8R1uB7o] loaded module [lang-expression]
+[2019-05-20T14:07:16,061][INFO ][o.e.p.PluginsService     ] [8R1uB7o] loaded module [lang-mustache]
+[2019-05-20T14:07:16,061][INFO ][o.e.p.PluginsService     ] [8R1uB7o] loaded module [lang-painless]
+[2019-05-20T14:07:16,061][INFO ][o.e.p.PluginsService     ] [8R1uB7o] loaded module [mapper-extras]
+[2019-05-20T14:07:16,061][INFO ][o.e.p.PluginsService     ] [8R1uB7o] loaded module [parent-join]
+[2019-05-20T14:07:16,062][INFO ][o.e.p.PluginsService     ] [8R1uB7o] loaded module [percolator]
+[2019-05-20T14:07:16,062][INFO ][o.e.p.PluginsService     ] [8R1uB7o] loaded module [rank-eval]
+[2019-05-20T14:07:16,063][INFO ][o.e.p.PluginsService     ] [8R1uB7o] loaded module [reindex]
+[2019-05-20T14:07:16,065][INFO ][o.e.p.PluginsService     ] [8R1uB7o] loaded module [repository-url]
+[2019-05-20T14:07:16,065][INFO ][o.e.p.PluginsService     ] [8R1uB7o] loaded module [transport-netty4]
+[2019-05-20T14:07:16,065][INFO ][o.e.p.PluginsService     ] [8R1uB7o] loaded module [tribe]
+[2019-05-20T14:07:16,065][INFO ][o.e.p.PluginsService     ] [8R1uB7o] loaded module [x-pack-ccr]
+[2019-05-20T14:07:16,065][INFO ][o.e.p.PluginsService     ] [8R1uB7o] loaded module [x-pack-core]
+[2019-05-20T14:07:16,065][INFO ][o.e.p.PluginsService     ] [8R1uB7o] loaded module [x-pack-deprecation]
+[2019-05-20T14:07:16,066][INFO ][o.e.p.PluginsService     ] [8R1uB7o] loaded module [x-pack-graph]
+[2019-05-20T14:07:16,066][INFO ][o.e.p.PluginsService     ] [8R1uB7o] loaded module [x-pack-ilm]
+[2019-05-20T14:07:16,066][INFO ][o.e.p.PluginsService     ] [8R1uB7o] loaded module [x-pack-logstash]
+[2019-05-20T14:07:16,066][INFO ][o.e.p.PluginsService     ] [8R1uB7o] loaded module [x-pack-ml]
+[2019-05-20T14:07:16,066][INFO ][o.e.p.PluginsService     ] [8R1uB7o] loaded module [x-pack-monitoring]
+[2019-05-20T14:07:16,067][INFO ][o.e.p.PluginsService     ] [8R1uB7o] loaded module [x-pack-rollup]
+[2019-05-20T14:07:16,067][INFO ][o.e.p.PluginsService     ] [8R1uB7o] loaded module [x-pack-security]
+[2019-05-20T14:07:16,067][INFO ][o.e.p.PluginsService     ] [8R1uB7o] loaded module [x-pack-sql]
+[2019-05-20T14:07:16,067][INFO ][o.e.p.PluginsService     ] [8R1uB7o] loaded module [x-pack-upgrade]
+[2019-05-20T14:07:16,067][INFO ][o.e.p.PluginsService     ] [8R1uB7o] loaded module [x-pack-watcher]
+[2019-05-20T14:07:16,068][INFO ][o.e.p.PluginsService     ] [8R1uB7o] no plugins loaded
+[2019-05-20T14:07:22,981][INFO ][o.e.x.s.a.s.FileRolesStore] [8R1uB7o] parsed [0] roles from file [/Users/stecort/Desktop/consegna AVV/ES Beats/elasticsearch-6.7.1/config/roles.yml]
+[2019-05-20T14:07:24,259][INFO ][o.e.x.m.p.l.CppLogMessageHandler] [8R1uB7o] [controller/15843] [Main.cc@109] controller (64 bit): Version 6.7.1 (Build e1f492de67a719) Copyright (c) 2019 Elasticsearch BV
+[2019-05-20T14:07:25,214][DEBUG][o.e.a.ActionModule       ] [8R1uB7o] Using REST wrapper from plugin org.elasticsearch.xpack.security.Security
+[2019-05-20T14:07:25,873][INFO ][o.e.d.DiscoveryModule    ] [8R1uB7o] using discovery type [zen] and host providers [settings]
+[2019-05-20T14:07:27,059][INFO ][o.e.n.Node               ] [8R1uB7o] initialized
+[2019-05-20T14:07:27,059][INFO ][o.e.n.Node               ] [8R1uB7o] starting ...
+[2019-05-20T14:07:27,406][INFO ][o.e.t.TransportService   ] [8R1uB7o] publish_address {127.0.0.1:9300}, bound_addresses {[::1]:9300}, {127.0.0.1:9300}
+[2019-05-20T14:07:30,609][INFO ][o.e.c.s.MasterService    ] [8R1uB7o] zen-disco-elected-as-master ([0] nodes joined), reason: new_master {8R1uB7o}{8R1uB7oCSSeiMqatwfkumw}{rs1tc53lQfC6KKe3dW7eeg}{127.0.0.1}{127.0.0.1:9300}{ml.machine_memory=8589934592, xpack.installed=true, ml.max_open_jobs=20, ml.enabled=true}
+[2019-05-20T14:07:30,614][INFO ][o.e.c.s.ClusterApplierService] [8R1uB7o] new_master {8R1uB7o}{8R1uB7oCSSeiMqatwfkumw}{rs1tc53lQfC6KKe3dW7eeg}{127.0.0.1}{127.0.0.1:9300}{ml.machine_memory=8589934592, xpack.installed=true, ml.max_open_jobs=20, ml.enabled=true}, reason: apply cluster state (from master [master {8R1uB7o}{8R1uB7oCSSeiMqatwfkumw}{rs1tc53lQfC6KKe3dW7eeg}{127.0.0.1}{127.0.0.1:9300}{ml.machine_memory=8589934592, xpack.installed=true, ml.max_open_jobs=20, ml.enabled=true} committed version [1] source [zen-disco-elected-as-master ([0] nodes joined)]])
+[2019-05-20T14:07:30,690][INFO ][o.e.h.n.Netty4HttpServerTransport] [8R1uB7o] publish_address {127.0.0.1:9200}, bound_addresses {[::1]:9200}, {127.0.0.1:9200}
+[2019-05-20T14:07:30,690][INFO ][o.e.n.Node               ] [8R1uB7o] started
+[2019-05-20T14:07:31,295][INFO ][o.e.c.s.ClusterSettings  ] [8R1uB7o] updating [xpack.monitoring.elasticsearch.collection.enabled] from [true] to [false]
+[2019-05-20T14:07:31,296][INFO ][o.e.c.s.ClusterSettings  ] [8R1uB7o] updating [xpack.monitoring.collection.enabled] from [false] to [true]
+[2019-05-20T14:07:31,767][WARN ][o.e.x.s.a.s.m.NativeRoleMappingStore] [8R1uB7o] Failed to clear cache for realms [[]]
+[2019-05-20T14:07:31,836][INFO ][o.e.l.LicenseService     ] [8R1uB7o] license [a9fca1b6-50ff-4cd4-abab-e8cd1664c1cd] mode [basic] - valid
+[2019-05-20T14:07:31,851][INFO ][o.e.g.GatewayService     ] [8R1uB7o] recovered [5] indices into cluster_state
+[2019-05-20T14:07:33,490][INFO ][o.e.c.r.a.AllocationService] [8R1uB7o] Cluster health status changed from [RED] to [YELLOW] (reason: [shards started [[packetbeat-6.7.1-2019.05.13][0]] ...]).
+[2019-05-20T14:10:52,612][WARN ][o.e.m.j.JvmGcMonitorService] [8R1uB7o] [gc][205] overhead, spent [526ms] collecting in the last [1s]
+[2019-05-20T14:11:00,629][WARN ][o.e.m.j.JvmGcMonitorService] [8R1uB7o] [gc][213] overhead, spent [605ms] collecting in the last [1s]
+[2019-05-20T14:15:21,244][INFO ][o.e.c.m.MetaDataCreateIndexService] [8R1uB7o] [metricbeat-6.7.1-2019.05.20] creating index, cause [auto(bulk api)], templates [metricbeat-6.7.1], shards [1]/[1], mappings [doc]
+[2019-05-20T14:23:37,413][INFO ][o.e.x.m.p.NativeController] [8R1uB7o] Native controller process has stopped - no new native processes can be started
+[2019-05-20T14:23:37,413][INFO ][o.e.n.Node               ] [8R1uB7o] stopping ...
+[2019-05-20T14:23:37,436][INFO ][o.e.x.w.WatcherService   ] [8R1uB7o] stopping watch service, reason [shutdown initiated]
+[2019-05-20T14:23:37,798][INFO ][o.e.n.Node               ] [8R1uB7o] stopped
+[2019-05-20T14:23:37,799][INFO ][o.e.n.Node               ] [8R1uB7o] closing ...
+[2019-05-20T14:23:37,829][INFO ][o.e.n.Node               ] [8R1uB7o] closed
+[2019-05-20T14:24:16,083][INFO ][o.e.e.NodeEnvironment    ] [8R1uB7o] using [1] data paths, mounts [[/ (/dev/disk1s1)]], net usable_space [39.7gb], net total_space [112.8gb], types [apfs]
+[2019-05-20T14:24:16,088][INFO ][o.e.e.NodeEnvironment    ] [8R1uB7o] heap size [990.7mb], compressed ordinary object pointers [true]
+[2019-05-20T14:24:16,191][INFO ][o.e.n.Node               ] [8R1uB7o] node name derived from node ID [8R1uB7oCSSeiMqatwfkumw]; set [node.name] to override
+[2019-05-20T14:24:16,191][INFO ][o.e.n.Node               ] [8R1uB7o] version[6.7.1], pid[16392], build[default/tar/2f32220/2019-04-02T15:59:27.961366Z], OS[Mac OS X/10.14.4/x86_64], JVM[Oracle Corporation/Java HotSpot(TM) 64-Bit Server VM/1.8.0_181/25.181-b13]
+[2019-05-20T14:24:16,192][INFO ][o.e.n.Node               ] [8R1uB7o] JVM arguments [-Xms1g, -Xmx1g, -XX:+UseConcMarkSweepGC, -XX:CMSInitiatingOccupancyFraction=75, -XX:+UseCMSInitiatingOccupancyOnly, -Des.networkaddress.cache.ttl=60, -Des.networkaddress.cache.negative.ttl=10, -XX:+AlwaysPreTouch, -Xss1m, -Djava.awt.headless=true, -Dfile.encoding=UTF-8, -Djna.nosys=true, -XX:-OmitStackTraceInFastThrow, -Dio.netty.noUnsafe=true, -Dio.netty.noKeySetOptimization=true, -Dio.netty.recycler.maxCapacityPerThread=0, -Dlog4j.shutdownHookEnabled=false, -Dlog4j2.disable.jmx=true, -Djava.io.tmpdir=/var/folders/lj/tdbh0bx928zgpljzkhm2360c0000gn/T/elasticsearch-221080985134702958, -XX:+HeapDumpOnOutOfMemoryError, -XX:HeapDumpPath=data, -XX:ErrorFile=logs/hs_err_pid%p.log, -XX:+PrintGCDetails, -XX:+PrintGCDateStamps, -XX:+PrintTenuringDistribution, -XX:+PrintGCApplicationStoppedTime, -Xloggc:logs/gc.log, -XX:+UseGCLogFileRotation, -XX:NumberOfGCLogFiles=32, -XX:GCLogFileSize=64m, -Des.path.home=/Users/stecort/Desktop/consegna AVV/ES Beats/elasticsearch-6.7.1, -Des.path.conf=/Users/stecort/Desktop/consegna AVV/ES Beats/elasticsearch-6.7.1/config, -Des.distribution.flavor=default, -Des.distribution.type=tar]
+[2019-05-20T14:24:19,298][INFO ][o.e.p.PluginsService     ] [8R1uB7o] loaded module [aggs-matrix-stats]
+[2019-05-20T14:24:19,299][INFO ][o.e.p.PluginsService     ] [8R1uB7o] loaded module [analysis-common]
+[2019-05-20T14:24:19,299][INFO ][o.e.p.PluginsService     ] [8R1uB7o] loaded module [ingest-common]
+[2019-05-20T14:24:19,299][INFO ][o.e.p.PluginsService     ] [8R1uB7o] loaded module [ingest-geoip]
+[2019-05-20T14:24:19,299][INFO ][o.e.p.PluginsService     ] [8R1uB7o] loaded module [ingest-user-agent]
+[2019-05-20T14:24:19,300][INFO ][o.e.p.PluginsService     ] [8R1uB7o] loaded module [lang-expression]
+[2019-05-20T14:24:19,300][INFO ][o.e.p.PluginsService     ] [8R1uB7o] loaded module [lang-mustache]
+[2019-05-20T14:24:19,300][INFO ][o.e.p.PluginsService     ] [8R1uB7o] loaded module [lang-painless]
+[2019-05-20T14:24:19,300][INFO ][o.e.p.PluginsService     ] [8R1uB7o] loaded module [mapper-extras]
+[2019-05-20T14:24:19,301][INFO ][o.e.p.PluginsService     ] [8R1uB7o] loaded module [parent-join]
+[2019-05-20T14:24:19,301][INFO ][o.e.p.PluginsService     ] [8R1uB7o] loaded module [percolator]
+[2019-05-20T14:24:19,301][INFO ][o.e.p.PluginsService     ] [8R1uB7o] loaded module [rank-eval]
+[2019-05-20T14:24:19,302][INFO ][o.e.p.PluginsService     ] [8R1uB7o] loaded module [reindex]
+[2019-05-20T14:24:19,302][INFO ][o.e.p.PluginsService     ] [8R1uB7o] loaded module [repository-url]
+[2019-05-20T14:24:19,302][INFO ][o.e.p.PluginsService     ] [8R1uB7o] loaded module [transport-netty4]
+[2019-05-20T14:24:19,303][INFO ][o.e.p.PluginsService     ] [8R1uB7o] loaded module [tribe]
+[2019-05-20T14:24:19,303][INFO ][o.e.p.PluginsService     ] [8R1uB7o] loaded module [x-pack-ccr]
+[2019-05-20T14:24:19,303][INFO ][o.e.p.PluginsService     ] [8R1uB7o] loaded module [x-pack-core]
+[2019-05-20T14:24:19,304][INFO ][o.e.p.PluginsService     ] [8R1uB7o] loaded module [x-pack-deprecation]
+[2019-05-20T14:24:19,304][INFO ][o.e.p.PluginsService     ] [8R1uB7o] loaded module [x-pack-graph]
+[2019-05-20T14:24:19,304][INFO ][o.e.p.PluginsService     ] [8R1uB7o] loaded module [x-pack-ilm]
+[2019-05-20T14:24:19,305][INFO ][o.e.p.PluginsService     ] [8R1uB7o] loaded module [x-pack-logstash]
+[2019-05-20T14:24:19,305][INFO ][o.e.p.PluginsService     ] [8R1uB7o] loaded module [x-pack-ml]
+[2019-05-20T14:24:19,305][INFO ][o.e.p.PluginsService     ] [8R1uB7o] loaded module [x-pack-monitoring]
+[2019-05-20T14:24:19,306][INFO ][o.e.p.PluginsService     ] [8R1uB7o] loaded module [x-pack-rollup]
+[2019-05-20T14:24:19,306][INFO ][o.e.p.PluginsService     ] [8R1uB7o] loaded module [x-pack-security]
+[2019-05-20T14:24:19,306][INFO ][o.e.p.PluginsService     ] [8R1uB7o] loaded module [x-pack-sql]
+[2019-05-20T14:24:19,306][INFO ][o.e.p.PluginsService     ] [8R1uB7o] loaded module [x-pack-upgrade]
+[2019-05-20T14:24:19,306][INFO ][o.e.p.PluginsService     ] [8R1uB7o] loaded module [x-pack-watcher]
+[2019-05-20T14:24:19,307][INFO ][o.e.p.PluginsService     ] [8R1uB7o] no plugins loaded
+[2019-05-20T14:24:24,844][INFO ][o.e.x.s.a.s.FileRolesStore] [8R1uB7o] parsed [0] roles from file [/Users/stecort/Desktop/consegna AVV/ES Beats/elasticsearch-6.7.1/config/roles.yml]
+[2019-05-20T14:24:26,067][INFO ][o.e.x.m.p.l.CppLogMessageHandler] [8R1uB7o] [controller/16417] [Main.cc@109] controller (64 bit): Version 6.7.1 (Build e1f492de67a719) Copyright (c) 2019 Elasticsearch BV
+[2019-05-20T14:24:26,909][DEBUG][o.e.a.ActionModule       ] [8R1uB7o] Using REST wrapper from plugin org.elasticsearch.xpack.security.Security
+[2019-05-20T14:24:27,672][INFO ][o.e.d.DiscoveryModule    ] [8R1uB7o] using discovery type [zen] and host providers [settings]
+[2019-05-20T14:24:29,003][INFO ][o.e.n.Node               ] [8R1uB7o] initialized
+[2019-05-20T14:24:29,004][INFO ][o.e.n.Node               ] [8R1uB7o] starting ...
+[2019-05-20T14:24:29,439][INFO ][o.e.t.TransportService   ] [8R1uB7o] publish_address {127.0.0.1:9300}, bound_addresses {[::1]:9300}, {127.0.0.1:9300}
+[2019-05-20T14:24:32,654][INFO ][o.e.c.s.MasterService    ] [8R1uB7o] zen-disco-elected-as-master ([0] nodes joined), reason: new_master {8R1uB7o}{8R1uB7oCSSeiMqatwfkumw}{g8P6lXu9R6uIDhemTangZw}{127.0.0.1}{127.0.0.1:9300}{ml.machine_memory=8589934592, xpack.installed=true, ml.max_open_jobs=20, ml.enabled=true}
+[2019-05-20T14:24:32,661][INFO ][o.e.c.s.ClusterApplierService] [8R1uB7o] new_master {8R1uB7o}{8R1uB7oCSSeiMqatwfkumw}{g8P6lXu9R6uIDhemTangZw}{127.0.0.1}{127.0.0.1:9300}{ml.machine_memory=8589934592, xpack.installed=true, ml.max_open_jobs=20, ml.enabled=true}, reason: apply cluster state (from master [master {8R1uB7o}{8R1uB7oCSSeiMqatwfkumw}{g8P6lXu9R6uIDhemTangZw}{127.0.0.1}{127.0.0.1:9300}{ml.machine_memory=8589934592, xpack.installed=true, ml.max_open_jobs=20, ml.enabled=true} committed version [1] source [zen-disco-elected-as-master ([0] nodes joined)]])
+[2019-05-20T14:24:32,747][INFO ][o.e.h.n.Netty4HttpServerTransport] [8R1uB7o] publish_address {127.0.0.1:9200}, bound_addresses {[::1]:9200}, {127.0.0.1:9200}
+[2019-05-20T14:24:32,747][INFO ][o.e.n.Node               ] [8R1uB7o] started
+[2019-05-20T14:24:33,420][INFO ][o.e.c.s.ClusterSettings  ] [8R1uB7o] updating [xpack.monitoring.elasticsearch.collection.enabled] from [true] to [false]
+[2019-05-20T14:24:33,420][INFO ][o.e.c.s.ClusterSettings  ] [8R1uB7o] updating [xpack.monitoring.collection.enabled] from [false] to [true]
+[2019-05-20T14:24:33,941][WARN ][o.e.x.s.a.s.m.NativeRoleMappingStore] [8R1uB7o] Failed to clear cache for realms [[]]
+[2019-05-20T14:24:34,007][INFO ][o.e.l.LicenseService     ] [8R1uB7o] license [a9fca1b6-50ff-4cd4-abab-e8cd1664c1cd] mode [basic] - valid
+[2019-05-20T14:24:34,021][INFO ][o.e.g.GatewayService     ] [8R1uB7o] recovered [6] indices into cluster_state
+[2019-05-20T14:24:35,715][INFO ][o.e.c.r.a.AllocationService] [8R1uB7o] Cluster health status changed from [RED] to [YELLOW] (reason: [shards started [[packetbeat-6.7.1-2019.05.13][2]] ...]).
+[2019-05-20T14:26:56,341][INFO ][o.e.c.m.MetaDataMappingService] [8R1uB7o] [metricbeat-6.7.1-2019.05.20/CcJNJdSCSlaORkJfS4c-mw] update_mapping [doc]
+[2019-05-20T14:27:01,587][INFO ][o.e.c.m.MetaDataMappingService] [8R1uB7o] [metricbeat-6.7.1-2019.05.20/CcJNJdSCSlaORkJfS4c-mw] update_mapping [doc]
+[2019-05-20T14:34:14,091][INFO ][o.e.x.m.p.NativeController] [8R1uB7o] Native controller process has stopped - no new native processes can be started
+[2019-05-20T14:34:14,092][INFO ][o.e.n.Node               ] [8R1uB7o] stopping ...
+[2019-05-20T14:34:14,110][INFO ][o.e.x.w.WatcherService   ] [8R1uB7o] stopping watch service, reason [shutdown initiated]
+[2019-05-20T14:34:14,663][INFO ][o.e.n.Node               ] [8R1uB7o] stopped
+[2019-05-20T14:34:14,664][INFO ][o.e.n.Node               ] [8R1uB7o] closing ...
+[2019-05-20T14:34:14,685][INFO ][o.e.n.Node               ] [8R1uB7o] closed
